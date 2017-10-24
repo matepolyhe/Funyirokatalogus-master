@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+}
+div#header{
+    width: 100%;
+    background-color: wheat;
+    position: fixed;
+    z-index: 2;
+}
+div#header_container{
+    width: 40%;
+    height: 40px;
+    margin: 0 auto;
+    text-align:  center;
+}
+img#header_icon{
+    height: 100%;
+    float: left;
+    display: inline-block;
+    margin-left: 50px;
+}
+h1{
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+button#homeScreenButton{
+    z-index: 2;
+    width: 40%;
+    height: 100%;
+    display: inherit;
+    background-color: #a41f29;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+div#rendezes_talalatszam{
+    float: right;
+    height: 50px;
+    width: calc(100% - 325px);
+    margin: 50px 5px 10px 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #ebe7ae;
+    background-color: #ebe7ae;
+    display: flex;
+    align-items: center;
+}
+div#rendezes{
+    margin-left: 10px;
+}
+div#talalatszam{
+    margin-left: 30px;
+}
+div#szurocontainer{
+    z-index: -1;
+    float: left;
+    width: 300px;
+    margin: 50px auto 10px 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #ebe7ae;
+    background-color: #ebe7ae;
+}
+div#szuroCim{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+div#szurocontainer#szurok{
+    position: relative;
+}
+input#nevMezo{
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    height: 20px;
+}
+
+select{
+    width: 200px;
+    margin-left: 9px;
+    border-radius: 5px;
+    height: 30px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+ /* add custom arrow */
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 30px 22px;
+}
+select:hover{
+    background-size: 32px 25px;
+}
+div#szurocontainer p{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+div#szurocontainer div{
+    margin-left: 10px;
+}
+div#szurocontainer p.hajtas{
+    font-size: 14px;
+    margin-left: 40px;
+}
+.minErtek{
+    font-size: 11px;
+    float: left;
+    display: inline-block;
+}
+.maxErtek{
+    font-size: 11px;
+    float: right;
+    display: inline-block;
+}
+div.slider{
+    display: inline-block;
+    width: 90%;
+    height: 20px;
+    padding: 0;
+    margin: 0 auto;
+}
+.slider input {
+    width: 150px;
+    height: 20px;
+    margin: 0 auto;
+    transform-origin: 75px 75px;
+}
+p.minmax{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+input.range{
+    width: 100%;
+}
+span#vagoszelessegCurrentValue{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+}
+span#hengerurtartalomCurrentValue{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+}
+span#tomegCurrentValue{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+}
+div#keresesButtonContainer{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+button#keresesButton{
+    margin: 0 auto;
+    width: 80%;
+    height: 99%;
+    padding: 5px 0;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #a41f29;
+    background-color: #a41f29;
+    color: darkgray;
+    font-size: 18px;
+    font-weight: 800;
+}
+button#keresesButton:hover{
+    color: #bdbdbd;
+    width: 81%;
+    height: 100%;
+}
+div#listaContainer{
+    float: right;
+    width: calc(100% - 325px);
+    margin: 0 5px 10px 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #ebe7ae;
+    background-color: #ebe7ae;
+}
+div.funyiroListaElem{
+    height: 100%;
+    width: 95%;
+    position: relative;
+    background-color: #fd8578;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    overflow: auto;
+    padding-left: 30px;
+}
+div.elemCim.ng-binding{
+    width: 97%;
+    height: 25px;
+    margin: 10px 0;
+    display: block;
+}
+div.elemKep{
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+div.funyiroListaElem.elemAdatok{
+    height: 75px;
+    width: 100%;
+    float:left;
+}
+li{
+    list-style: none;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+ul{
+    width: 98%;
+    height: 95%;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+.ng-hide {
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    top:-200px;
+    left: 200px;
+}
+img.funyiroKep{
+    max-height: 75px;
+    margin: auto;
+    display: block;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+
+}

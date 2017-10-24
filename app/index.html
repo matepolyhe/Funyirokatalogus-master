@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="App" >
+<head>
+  <meta charset="utf-8">
+  <title>Funyiro aruhaz</title>
+  <link rel="stylesheet" href="style.css">
+  <script>document.write("<base href=\"" + document.location + "\" />");</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="FunyiroAdatbazisCtrl">
+<ul>
+  <li ng-repeat="funyiro in funyirok">
+    {{funyiro.nev}} - <em>{{funyiro.tipus}}</em> <img src = "funyiro.image/src"> </img>
+  </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,69 @@
+[{
+  "megnevezes": "Hecht 5162 fűnyíró traktor",
+  "image": {
+    "src": "Images/Hecht 5162/Hecht 5162.jpg",
+    "name": "Hecht 5162",
+    "hOffset": 75,
+    "vOffset": 75,
+    "alignment": "center"
+  },
+  "type": {
+    "nev" : "Fűnyíró traktor"
+  },
+  "márka" : "Hecht",
+  "vagoszelesseg": 62,
+  "cc" : 190,
+  "suly" : 125,
+  "leiras" : "A Hecht 5162 fűnyíró traktor megbízható társ a kerti munkában. 2000–2500 m2 nagyságú terület levágására tervezték. A gépet 6,5 lóerős eredeti Briggs & Stratton motor hajtja, amely képes önjáró üzemmódban dolgozni 1,5 km/h és 5 km/h sebességintervallumban. A motor teljesítményének optimalizálását a traktor sebességváltója biztosítja, mely 4 sebességes előre, és 1 hátra. A hulladék tárolására egy 130 literes tartályban van lehetőség, így a levágott terület nem lesz tele a levágott fűvel. A vágási magasság központilag állítható 30mm és 90mm között."
+},
+  {
+    "megnevezes": "MTD DL 96 H Fűnyíró traktor",
+    "image": {
+      "src": "Images/MTD DL 96/MTD DL 96.jpg",
+      "name": "MTD DL 96 H",
+      "hOffset": 75,
+      "vOffset": 75,
+      "alignment": "center"
+    },
+    "type": {
+      "nev" : "Fűnyíró traktor"
+    },
+    "márka" : "MTD",
+    "vagoszelesseg": 96,
+    "cc" : 420,
+    "suly" : 150,
+    "leiras" : "MTD Beige Line DL 96 H oldalkidobós fűnyíró traktor transzmatikus meghajtása ideális haladási sebességet biztosít mind előre, mind hátramenetben. A nagy átmérőjű és széles, gyepkímélő mintázattal ellátott kerekeken könnyedén halad, akár nehezebb terepviszonyok közepette is. Kicsi fordulóköre egyszerű manőverezést biztosít. A korszerű MTD fűnyíró traktor motor a dimbes-dombos területeken is megfelelő kenést, nyomatékot és erőt biztosít a traktor és a vágókések meghajtásához. Motorja olajszivattyúval ellátott, ezért akár meredekebb területekre is használható (akár 20%-os lejtőig). Állítható ülése, valamint a motor és a vágóasztal szabályozását kezelő felület ergonomikus kialakítása a traktor vezetőjének kényelmét szolgálja."
+  },
+  {
+    "megnevezes": "Gardena R40Li",
+    "image": {
+      "src": "Images/Gardena R40Li/Gardena R40Li.jpg",
+      "name": "Gardena R40Li",
+      "hOffset": 75,
+      "vOffset": 75,
+      "alignment": "center"
+    },
+    "type": {
+      "nev" : "Fűnyíró robot"
+    },
+    "márka" : "Gardena",
+    "vagoszelesseg": 17,
+    "suly" : 5,
+    "leiras" : "Az innovatív Gardena R40Li robotfűnyíró Ön helyett végzi el a fűnyírást: önállóan nyírja le a füvet, amíg Ön pihen, vagy más tevékenységet végez. A szabad mozgásmintának köszönhetően a Gardena R40Li kb. 400 m2 gyepfelület nyírására ajánlott - hatékonyan, megbízhatóan, csíkmentesen."
+  },
+  {
+    "megnevezes": "Stihl FS 55",
+    "image": {
+      "src": "Images/Stihl FS 55/Stihl FS 55.jpg",
+      "name": "Stihl FS 55",
+      "hOffset": 75,
+      "vOffset": 75,
+      "alignment": "center"
+    },
+    "type": {
+      "nev" : "Fűkasza"
+    },
+    "márka" : "Stihl",
+    "suly" : 5,
+    "leiras" : "FS 55 motoros szegélynyíró kétkaros fogantyúval. Sokoldalú, motoros szegélynyíró kétkaros fogantyúval az ergonómikus munkához a magán kertekben. Hozzáillő vágóeszközzel használható gazos fű, nád és csalán vágásához is. Bevált technológia, környezetbarát motorral. "  }
+]

@@ -1,0 +1,127 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Fűnyíró áruház</title>
+    <link rel="stylesheet" href="fooldalStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<div id="header">
+    <div id="header_container">
+        <img id="header_icon" src="Images/Header_icon.png">
+        <h1>
+            Fűnyíró áruház
+        </h1>
+        <button id="homeScreenButton" onclick="homeScreen()">Homescreen</button>
+    </div>
+</div>
+<div id="rendezes_talalatszam">
+    <div id="rendezes">
+        <form name="rendezesi_szempont" method="post" action="">
+            Rendezés szempontja:
+            <label>
+                <select name="rendezesi_szempontok">
+                    <option>Név</option>
+                    <option>Hengerűrtartalom</option>
+                    <option>Teljesítmény</option>
+                    <option> Tömeg</option>
+                </select>
+            </label>
+        </form>
+    </div>
+    <div id="talalatszam">
+            Találatok száma oldalanként:
+            <label>
+                <select onchange="createList()" id="talalatszamok" name="talalatszamok">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                </select>
+            </label>
+    </div>
+</div>
+<div id="szurocontainer">
+    <div id="szuroCim">
+        <h2>
+            Részletes keresés
+        </h2>
+    </div>
+    <div id="szurok">
+        <p>
+            Név: <label>
+            <input id="nevMezo" type="text" name="nev" size="25" maxlength="25">
+        </label>
+        </p>
+        <p>
+            Típus:
+            <label>
+                <select name="tipus">
+                    <option onclick="enableHajtasValaszto()">Kézi</option>
+                    <option onclick="disableHajtasValaszto()">Fűkasza</option>
+                    <option onclick="disableHajtasValaszto()">Fűnyíró traktor</option>
+                    <option onclick="disableHajtasValaszto()">Fűnyíró robot</option>
+                </select>
+            </label>
+        </p>
+        <p> Hajtás: </p>
+        <p class="hajtas"><label for="benzinHajtas"></label><input id="benzinHajtas" type="radio" name="hajtas" value="benzines"> Benzines </p>
+        <p class="hajtas"><label for="elektromosHajtas"></label><input id="elektromosHajtas" type="radio" name="hajtas" value="elektromos"> Elektromos </p>
+        <p>
+            Márka:
+            <label>
+                <select name="marka">
+                    <option>Mindegy</option>
+                    <option>Márka 1</option>
+                    <option>Márka 2</option>
+                    <option>Márka 3</option>
+                </select>
+            </label>
+        </p>
+        <p>Vágószélesség:</p>
+        <div class="slider">
+            <label for="vagoszelesseg_range"></label><input onchange="refreshVagoszelesseg()" type="range" id="vagoszelesseg_range" class="range" value="100"><br>
+        </div>
+        <p class="minmax">
+            <span class="minErtek">0cm</span><span id="vagoszelessegCurrentValue"></span><span class="maxErtek">120cm</span>
+        </p>
+        <p>Hengerűrtartalom:</p>
+        <div class="slider">
+            <label for="hengerurtartalom_range"></label><input onchange="refreshHengerurtartalom()" type="range" id="hengerurtartalom_range" class="range" value="100"><br>
+        </div>
+        <p class="minmax">
+            <span class="minErtek">0cm</span><span id="hengerurtartalomCurrentValue"></span><span class="maxErtek">120cm</span>
+        </p>
+        <p>Tömeg:</p>
+        <div class="slider">
+            <label for="tomeg_range"></label><input onchange="refreshTomeg()" type="range" id="tomeg_range" class="range" value="100"><br>
+        </div>
+        <p class="minmax">
+            <span class="minErtek">0cm</span><span id="tomegCurrentValue"></span><span class="maxErtek">120cm</span>
+        </p>
+    </div>
+    <div id="keresesButtonContainer">
+        <button id="keresesButton" onclick="">
+            Keresés
+        </button>
+    </div>
+</div>
+<div id="listaContainer">
+    <script>
+        createList();
+    </script>
+</div>
+
+<script>
+    var x = document.getElementById("vagoszelesseg_range").value;
+    document.getElementById("vagoszelessegCurrentValue").innerHTML = (x * 6/5).toString();
+
+    var y = document.getElementById("hengerurtartalom_range").value;
+    document.getElementById("hengerurtartalomCurrentValue").innerHTML = (y * 6/5).toString();
+
+    var z = document.getElementById("tomeg_range").value;
+    document.getElementById("tomegCurrentValue").innerHTML = (z * 6/5).toString();
+</script>
+</body>
+</html>
